@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    text-align: center;
+    #One  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        .header h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        background-color: rgba(212, 33, 33, 0.747);
+        border-radius: 0.5rem;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 3vw;
+
+        span {
+            text-transform: uppercase;
+            font-weight: 200;
+        }
+
+        .div-op {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        
+        
+    }
+// this is wrong plz write in #One sectionn i will fix it leter 
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        color: #333;
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 100;
+
+            span {
+                font-weight: 800;
+            }
+        }
+    }
+    // this text last
+}
+}

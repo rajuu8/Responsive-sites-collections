@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html ,
+ body {
+  width: 100%;
+  height: 100%;
+ }
+
+ main {
+  width: 100%;
+ }
+
+ #One {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  padding: 1rem; 
+ }
+
+ .header {
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: rgba(236, 64, 64, 0.774);
+  color: white;
+  border-radius:0.4rem;
+ }
+ 
+ .header span {
+  font-weight: 100;
+  text-transform: capitalize; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+.text {
+  padding: 0.1rem;
+  font-size: 1.4rem;
+  color: #5f5d5d;
+}
+
+.text span {
+  font-weight: 700;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.div-op-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0.5rem;
+}
+
+.div-op-container .div-op {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 1rem;
+
+}
+
+.div-op-container .div-op i {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid #666;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.div-op-container .div-op h2 {
+  font-size: 1rem;
+}
+
+.div-op-container .div-op h2 span {
+  color: #444;
+  font-weight: 100;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 2px solid #b3aaaab2;
+  padding-top : 2.3rem;
+  /* gap: 1rem; */
+  flex-direction: column;
+}
+
+.bottom p {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  color: #555555c5;
+}
+
+.bottom #like {
+ margin-top: 1.7rem;
+ padding: 0.9vw 1vw;
+ font-size: 1rem;
+ border-radius: 0.41rem;
+ border: 1px solid #5c5a5ab6;
+ letter-spacing: 2px;
+ color: #33333393;
+ background-color: transparent;
+ display: none;
+}
+.bottom button {
+ margin-top: 1.7rem;
+ padding: 0.9vw 1vw;
+ width: 180px;
+ font-size: 1rem;
+ border-radius: 0.41rem;
+ border: 1px solid #5c5a5ab6;
+ letter-spacing: 2px;
+ color: #464545;
+}
+
+.bottom button i {
+  font-size: 1.1rem;
+  margin-right: 0.8rem;
+}
+
+.card {
+  height: 30vh;
+  width: 97%;
+  background-color: red;
+  background-image: url("6f12186d-0245-4df7-bb5c-a85fa0b0cd6c copy.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0.4rem;
+  position: relative;
+  box-shadow: 0px 0px 5px #333;
+}
+
+#card-two {
+background-image: url("d1adab30-ef4d-4f51-a3f1-47c9603f58e1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#card-three {
+background-image: url("251bb93a-ec78-4764-936b-5a601ed6c701.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.card .bottom-two {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.card .bottom-two h1 {
+  padding: 0.5rem;
+  font-size: 7vw;
+}
+.bottom-two .Demo {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 19rem;
+    margin-right: 0;
+  }
+
+.card .bottom-two .Download {
+ padding: 0.8rem 1rem;
+ border: none;
+ background-color: #494343;
+ font-size: 1.1rem;
+ color: white;
+ border-radius: 0.3rem;
+ transform: scale(0.8);
+}
+
+.card .bottom-two .Download::after {
+  content: "(460,209)";
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+#dash {
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#dash .text-to {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+
+#dash .text-to h1 {
+  font-size: 1.1rem;
+  font-weight: 100;
+  color: #33333393;
+}
+
+#dash .text-to h2 {
+  font-size: 1rem;
+  font-weight: 100;
+  color: #33333393;
+}
+
+.search {
+  display: flex;
+  gap: 0.9rem;
+  padding-bottom: 1rem;
+}
+.search input {
+  padding: 2vw 5vw;
+  border: 1px solid #33333393;
+  border-radius: 2px;
+  border-radius: 0.5rem;
+}
+
+.search button {
+  padding: 2vw 5vw;
+  border: 1px solid #33333393;
+  border-radius: 2px;
+  border-radius: 0.5rem;
+}
+
+.link-section {
+  display: flex;
+  gap: 1rem;
+  border: 1px dashed #33333393;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.like {
+  padding: 0.6rem;
+  background-color: blue;
+  border-radius: 8px;
+  color: white;
+  
+  
+}
+
+.like:nth-child(2){
+  color: white;
+  background-color: black;
+}
+
+.like i{
+  margin-right: 0.7rem;
+}
+
+.link-section .like {
+  font-size: 0.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+footer h1 {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+footer h2 {
+  padding-top: 10px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+
+@media (min-width:600px) {
+  
+  .card {
+    min-height: 320px;
+    position: relative;
+  }
+  .card .bottom-two {
+    position: absolute;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card .bottom-two h1 {
+    font-size: 1.5rem;
+  }
+
+  .card .bottom-two button {
+    font-size: 1em;
+    padding: 0rem 1rem;
+  }
+  .card .bottom-two .Download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (min-width:740px) {
+  .div-op-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .div-op-container .div-op {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div-op-container .div-op h2 {
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+  }
+  .div-op-container .div-op i {
+    font-size: 30px;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  .div-op-container #gift {
+    display: flex;
+    width: 250px;
+    margin-top: 1.5rem;
+  }
+
+  .bottom {
+    padding: 0rem 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .bottom p {
+    display: none;
+  }
+
+  .bottom #like {
+    display: flex;
+  }
+
+  .card .bottom-two .Demo {
+    display: flex;
+    padding: 1vw 2vw;
+    margin-left: 0;
+  }
+}
+
+@media (min-width:1100px) {
+  .search input {
+    padding: 0.1rem 1rem;
+    font-size: 10px;
+    height: 50px;
+  }
+  .search .subscribe {
+    padding: 0.1rem 1rem;
+    font-size: 10px;
+    height: 50px;
+    width: 80px;
+  }
+}
