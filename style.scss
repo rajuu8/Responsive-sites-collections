@@ -1,68 +1,152 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 html,
 body {
-    height: 100%;
     width: 100%;
+    height: 100%;
 }
 
-main {
+@mixin center{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
     text-align: center;
-    #One  {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        .header h1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        background-color: rgba(212, 33, 33, 0.747);
-        border-radius: 0.5rem;
-        color: white;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        padding: 3vw;
+}
 
-        span {
-            text-transform: uppercase;
-            font-weight: 200;
-        }
+main {
+    width: 100%;
 
-        .div-op {
-            width: 100px;
-            height: 100px;
-            background-color: red;
-        }
-        
-        
-    }
-// this is wrong plz write in #One sectionn i will fix it leter 
-    .text {
+    .top-nav {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 1rem;
-        color: #333;
+        width: 100%;
+        background-color: blue;
+        padding: 0.5rem 1.3rem;
+        color: white;
 
-        p {
-            font-size: 1.5rem;
-            font-weight: 100;
+        a {
+            color: white;
+            text-decoration: white;
+        }
+    }
 
-            span {
-                font-weight: 800;
+    nav {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem 1.3rem;
+        position: relative;
+    }
+    .left-nav , .right-nav {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+   .left-nav {
+    display:flex;
+    gap: 10px;
+    @include center ();
+    i {
+        font-size: 2.3rem;
+        padding-right: 1rem;
+    }
+    .Mobile {
+        width: 8vw;
+    }
+   }
+
+   .right-nav {
+    @include center();
+    i {
+        font-size: 1.2rem;
+    }
+    .box {
+        width: 2.5rem; 
+        height: 2.5rem;
+        border-radius: 50%;
+        background-image: url("https://avatars.githubusercontent.com/u/199656591?v=4");
+        background-position: center;
+        background-size : cover;
+    }
+    .arrow summary{
+        list-style: none;
+        transition: all ease-in-out 0.2s;
+
+    }
+    .menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            list-style: none;
+            position: absolute;
+            right: 1rem;
+            top: 4.5rem;
+            width: 100%;
+            i {
+                font-size: 1.2rem;
+            }
+            li {
+                width: 95%;
+                font-size: 1.2rem;
+                border-top: 1px solid #4444449f;
+                display: flex;
+                justify-content: start;
+                margin-left: 3.5rem;
+                padding: 3.5vw;
+                gap: 10px;
+                transition: all ease-in-out 0.5s;
+
+            }
+            li:nth-child(4){
+                border-bottom: 1px solid #4444449f;
+                color: red;
+            }
+        }
+
+    .arrow summary:active{
+        transform: rotate(360deg);
+    }
+    
+   }
+}
+
+
+
+
+// for nav bar only
+@media (min-width:1000px) {
+    main {
+        .top-nav h3 {
+            font-size: 2vw;
+            font-family: system-ui;
+            font-weight: 600;
+        }
+        nav {
+            .left-nav{
+
+            i {
+                display: none;
+            }
+            .lap {
+                display: none;
+            }
+            .mobile {
+                display: none;
+            }
             }
         }
     }
-    // this text last
 }
-}
+
+// end

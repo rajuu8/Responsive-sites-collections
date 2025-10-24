@@ -5,105 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome Free CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
+    <!-- Font Awesome Free CDN -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <main>
-        <Section id="One">
-            <div class="header">
-            <h1>HTML5 <span>up</span></h1>
+        <div class="top-nav">
+            <h3>
+                You've unlocked a Pro discount, which expires in 5 days.
+                <a href="#">Upgrade now</a>
+            </h3>
+        </div>
+
+        <nav>
+            <!-- Left Nav -->
+            <div class="left-nav">
+                <i class="fa-solid fa-bars "></i>
+                <img src="https://www.frontendmentor.io/static/images/logo-mobile.svg" alt="" class="Mobile">
+                <img src="https://www.frontendmentor.io/static/images/logo-desktop.svg" alt=""  class="lap">
             </div>
-            <div class="text">
-                <p>makes  <span>spiffy HTML5 site template </span> that are:</p>
+
+            <!-- Right Nav -->
+            <div class="right-nav">
+                <details id="EXPLORE" >
+                    <summary>
+                        <h2> <i>EXPLORE</i></h2>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </summary>
+                    <ul class="menu">
+                        <li><i class="fa-solid fa-diagram-project"></i> Learning Paths</li>
+                        <li><i class="fa-solid fa-laptop-code"></i> Challenges</li>
+                        <li><i class="fa-solid fa-code"></i> Solutions</li>
+                        <li><i class="fa-solid fa-newspaper"></i> Articles</li>
+                    </ul>
+                </details>
+
+                <details id="COMPANIES" >
+                    <summary>
+                        <ul id="menu">
+                        <h2><i>COMPANIES</i></h2>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                        </ul>
+                    </summary>
+                    <div class="hind">
+                    <div class="item" id="items"><i class="fa-solid fa-user"></i> HIRE DEVELOPERS</div>
+                    <div class="item" ><i class="fa-solid fa-user-graduate"></i> TRAIN DEVELOPERS</div>
+                    </div>
+                </details>
+
+                <h4 class="red">UNLOCK <span>PRO</span></h4>
+
+                <!-- mobile-code -->
+                <i class="fa-solid fa-bell bell"></i>
+                <i class="fa-solid fa-box  boxe"></i>
+                <div class="box"></div>
+
+                <details class="arrow">
+                    <summary><i class="fa-solid fa-chevron-down arrow"></i></summary>
+                    <ul class="menu">
+                        <li><i class="fa-solid fa-house"></i> HOME</li>
+                        <li><i class="fa-solid fa-user"></i> PROFILE</li>
+                        <li><i class="fa-solid fa-gear"></i> SETTINGS</li>
+                        <li><i class="fa-solid fa-right-from-bracket"></i> SIGN OUT</li>
+                    </ul>
+                </details>
+                <!-- end -->
             </div>
-           <div class="div-op-container">
-    <div class="div-op">
-        <i class="fas fa-laptop"></i> 
-        <h2>Fully <span>Responsive</span></h2>
-    </div>
-    <div class="div-op">
-        <i class="fa-solid fa-code"></i> 
-        <h2>Bulit intelligent  <span>HTML5 + CSS3</span></h2>
-    </div>
-    <div class="div-op">
-        <i class="fa-solid fa-gear"></i>
-        <h2>super<span> Customizable</span></h2>
-    </div>
-    <div class="div-op" id="gift">
-        <i class="fa-solid fa-gift"></i>
-        <h2>Free <span>under the Creative Commons </span> </h2>
-    </div>
-</div>
-
- <div class="bottom">
-     <p>Get notified when I release new stuff</p>
-     <div class="like" id="like">
-                <h1><i class="fa-solid fa-heart"></i>like</h1>
+        </nav>
+        <section id="hero">
+            <header>
+                <h1> <i>FOR LEARNERS</i> </h1>
+            </header>
+            <div class="hero-p">
+                <h1>Front-end and full-stack coding challenges that build real skills and help get you hired</h1>
             </div>
-     <button><i class="fa-brands fa-twitter"></i>Follow@Raju</button>
-     </div>
-
-     <!-- yaha par ek card-wrapper bana chahiye mujhe mistka ho ga ya hain aab add karun ga to for se code likha na pare ga to sry ma nahi likhun ga -->
-     <div class="card"  id="card-one" >
-        <div class="bottom-two">
-            <h1>Loadr Ram</h1>
-            <button class="Demo">Demo</button>
-            <button class="Download">Download</button>
-        </div>
-     </div>
-
-     <div class="card" id="card-two">
-        <div class="bottom-two">
-            <h1>Loadr Ram</h1>
-            <button class="Demo">Demo</button>
-            <button class="Download">Download</button>
-        </div>
-     </div>
-
-     <div class="card" id="card-three">
-        <div class="bottom-two">
-            <h1>Loadr Ram</h1>
-            <button class="Demo">Demo</button>
-            <button class="Download">Download</button>
-        </div>
-     </div>
-
-
-     <div class="card" id="card-four">
-        <div class="bottom-two">
-            <h1>Loadr Ram</h1>
-            <button class="Demo">Demo</button>
-            <button class="Download">Download</button>
-        </div>
-     </div>
-
-     <!-- add more cards  -->
-      <!-- end -->
-</Section>
-      <section id="dash">
-        <div class="text-to">
-            <h1>Built Raju with Responsive Tools.</h1>
-        <h2>Licensed under the Creative Commons Attrbuction license</h2>
-        </div>
-        <div class="search">
-        <input type="text" placeholder="Subscribe for email updates!">
-        <button class="subscribe">Subscribe</button>
-        </div>
-        <div class="link-section">
-            <div class="like">
-                <h1><i class="fa-solid fa-heart"></i>like</h1>
+            <div class="hero-bottom">
+                <h5>Frontend Mentor provides professional design-to-code challenges that mirror real-world development work. Join 1,099,841 developers building portfolio projects that impress employers.</h5>
             </div>
-            <div class="like">
-                <h1><i class="fa-brands fa-twitter"></i>Twitter</h1>
+            <div class="hero-btn-section">
+                <button class="githunb"> START BULDING FREE <i class="fa-brands fa-github"></i></button>
+                <button class="normal">BROWSE CHALLENGES</button>
             </div>
-        </div>
-        <footer id="footer">
-            <h1>@HTML5 UP</h1>
-            <h2>Over 19,726,858 served</h2>
-        </footer>
-      </section>
+            <div class="hero-img-section">
+                
+            </div>
+        </section>
     </main>
 </body>
 </html>
