@@ -1,15 +1,9 @@
-let card =  document.querySelector('.card'); 
-let i = document.querySelector('i');
+let main = document.querySelector('main');
+let cursor = document.querySelector('.cursor');
 
 
-card.addEventListener('dblclick', ()=> {
-    i.style.transform = 'translate(-50%,-50%) scale(1)'
-    i.style.opacity = 0.6
+main.addEventListener('mousemove', (dext)=> {
+    cursor.style.left = dext.x+'px'
+    cursor.style.top = dext.y+'px'
 
-    setTimeout(() => {
-    i.style.opacity = 0        
-    }, 1000);
-    setTimeout(() => {
-    i.style.transform = 'translate(-50%,-50%) scale(0)'
-    }, 2000);
 })
