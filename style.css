@@ -18,6 +18,7 @@ main {
     flex-direction: column;
 }
 body {
+    overflow: hidden;
     background-color: goldenrod;
 }
 
@@ -45,6 +46,7 @@ button {
     font-weight: 500;
     transition: all ease-in 0.2s;
     cursor: pointer;
+    z-index: 999;
 }
 
 button:active{

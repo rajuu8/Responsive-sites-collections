@@ -1,35 +1,54 @@
-let arr = [
-    {
-        team:'CSK',
-        primary:'yellow',
-        secondary: 'blue'
-    }, {
-        team:'RCB',
-        primary:'red',
-        secondary: 'black'
-    }, {
-        team:'MI',
-        primary:'blue',
-        secondary: 'gold'
-    }, {
-        team:'KKR',
-        primary:'purple',
-        secondary: 'green'
-    }, {
-        team:'COD',
-        primary:'yellow',
-        secondary: 'blue'
-    }
-]
-
-let main = document.querySelector('main');
-let card = document.querySelector('.card');
-let h1 = document.querySelector('h1');
 let btn = document.querySelector('button');
-btn.addEventListener('click',()=>{
-let a = Math.floor(Math.random()*arr.length)
-    h1.innerHTML = arr[a].team
-    main.style.backgroundColor = arr[a].primary
-    card.style.backgroundColor = arr[a].secondary
+let main = document.querySelector('main')
 
+// btn.addEventListener('click',()=> {
+
+//     let x = Math.floor(Math.random()*100)
+//     let y = Math.floor(Math.random()*100)
+
+
+//     let c1 = Math.floor(Math.random()*256)
+//     let c2 = Math.floor(Math.random()*256)
+//     let c3 = Math.floor(Math.random()*256)
+
+//     let colors = `rgb(${c1} , ${c2} ,${c3})`
+    
+//     let div = document.createElement('div')
+//     div.style.height = '50px'
+//     div.style.width = '50px'
+//     div.style.position = 'absolute'
+//     div.style.backgroundColor = colors
+
+
+//     div.style.left = x + '%'
+//     div.style.top = y + '%'
+
+
+//     main.appendChild(div)
+// })
+
+
+btn.addEventListener('click' , ()=>{
+    let div = document.createElement('div')    
+
+    let x = Math.random()*90
+    let y = Math.random()*90
+
+    let c1 = Math.floor(Math.random()*256)
+    let c2 = Math.floor(Math.random()*256)
+    let c3 = Math.floor(Math.random()*256)
+
+
+    div.style.height = '50px'
+    div.style.width = '50px'
+    div.style.backgroundColor = `rgb(${c1},${c2},${c3})`
+    div.style.position = 'absolute'
+    div.style.top = x + '%'
+    div.style.left = y + '%'
+
+
+
+
+    main.appendChild(div)
+    
 })
