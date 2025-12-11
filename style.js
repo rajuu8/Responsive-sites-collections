@@ -1,36 +1,26 @@
 let btn = document.querySelector('button');
-let main = document.querySelector('main')
-let h1 = document.querySelector('h1')
+let h1 = document.querySelector('h1');
+let inner = document.querySelector('.inner');
 
+let grow = 0
 
-let arr = ['raju' ,'abishek', 'alok' , 'om' , 'arpan']
-
-btn.addEventListener('click' , ()=>{
-    let h1 = document.createElement('h1')
-    let a = Math.floor(Math.random()*arr.length)
-
-    // Random
-    let x = Math.floor(Math.random()*100)
-    let y = Math.floor(Math.random()*100)
-
-    // Rotate
-    let r = Math.floor(Math.random()*361)
-    // sclae
-    let s = Math.random()*4
-
-
+btn.addEventListener('click',()=> {
+    btn.style.pointerEvents = 'none'
     
-    h1.innerHTML = arr[a]
-    h1.style.position = 'absolute'
-    h1.style.top = x + '%'
-    h1.style.left = y + '%'
-    h1.style.rotate = r + 'deg'
-    h1.style.scale = s 
+    let num = 50 + Math.floor(Math.random()*50)
+
+   let i =  setInterval(()=> {
+        grow++;
+        h1.innerHTML = grow + '%'
+        inner.style.width = grow + '%'
+        btn.style.opacity = 0.9
 
 
+    },num)
 
+    setTimeout(() => {
+        clearInterval(i)
+    }, num*100);
+     
 
-
-
-    main.append(h1)
 })
