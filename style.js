@@ -1,26 +1,22 @@
-let btn = document.querySelector('button');
-let h1 = document.querySelector('h1');
-let inner = document.querySelector('.inner');
+let card = document.querySelector('.card');
+let i = document.querySelector('i');
 
-let grow = 0
 
-btn.addEventListener('click',()=> {
-    btn.style.pointerEvents = 'none'
+card.addEventListener('dblclick', ()=> {
     
-    let num = 50 + Math.floor(Math.random()*50)
-
-   let i =  setInterval(()=> {
-        grow++;
-        h1.innerHTML = grow + '%'
-        inner.style.width = grow + '%'
-        btn.style.opacity = 0.9
-
-
-    },num)
+    i.style.opacity = 0.8
+    i.style.transform = `translate(-50%, -50%) scale(3) `
 
     setTimeout(() => {
-        clearInterval(i)
-    }, num*100);
-     
+    i.style.transform = `translate(-50%, -1500%) scale(3)  rotate(-60deg)`
+    }, 800);
+    setTimeout(() => {
+    i.style.opacity = 0
 
+    }, 1000);
+
+    setTimeout(() => {
+    i.style.transform = `translate(-50%, -50%) scale(0) rotate(-60deg) `
+
+    }, 1200);
 })
