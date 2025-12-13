@@ -1,13 +1,17 @@
-let main = document.querySelector('main');
-let box = document.querySelector('.box');
+let h1 = document.querySelector('h1');
 
-main.addEventListener('mousemove', (dets) => {
+let aud = new Audio('./39.mp3');
+let aud1 = new Audio('./40.mp3');
 
-    let c1 = Math.floor(Math.random() * 256);
-    let c2 = Math.floor(Math.random() * 256);
-    let c3 = Math.floor(Math.random() * 256);
+document.addEventListener('keydown', (e) => {
+    h1.innerHTML = e.code;
 
-    box.style.left = dets.x + 'px';
-    box.style.top = dets.y + 'px';
-    box.style.backgroundColor = `rgb(${c1}, ${c2}, ${c3})`;
+    if (e.code === 'KeyA') {
+        aud.currentTime = 0;
+        aud.play();
+    } 
+    else if (e.code === 'KeyB') {
+        aud1.currentTime = 0;
+        aud1.play();
+    }
 });
